@@ -1,0 +1,51 @@
+body { 
+  background-color:#808080;
+  background: url("https://raw.githubusercontent.com/sschapma/codepen/master/ebd.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font-size: 18px;
+  color:white;
+  text-align:center;
+  font-family:"Architects Daughter";
+}
+
+a, a:hover, a:active, a:visited, a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.quoteBox {
+	background: black;
+	padding: 20px 20px 15px;
+  font-size:1.1em;
+  background-color:black;
+  position:relative;
+  width:80%;
+  margin-top: 20px;
+  margin-left:10%;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  border: 2px solid white;
+}
+
+#twtbox {
+  position:absolute;
+  bottom:-2px;
+  right:5px;
+}
+
+.newQuote {
+  background: black;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border: 2px solid white;
+  position:absolute;
+  bottom:0;
+  right:10px;
+}
