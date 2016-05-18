@@ -33,10 +33,10 @@ var quotes = [
 ];
 
 $(document).ready(function() {
-	
+
 	window.onload = function() {
-		pickQuote();
-		createButton();
+		pickQuote(); //picks a random quote from the object above
+		createButton(); //creates twitter button to tweet current quote
 	}
 
 
@@ -49,13 +49,13 @@ $(document).ready(function() {
 
 	function pickQuote() {
 		var randomNum = quotes[ Math.floor( Math.random() * quotes.length ) ];
-
+		//adds transition effect
 		$(".quoteBox").hide();
     $("#quote").html(randomNum.quote);
     $(".quoteBox").fadeIn(1500);
 
 	}
-  
+
 // Tweet Button - from http://denvycom.com/blog/twitter-button-with-dynamic-custom-data-text-message/
 	function createButton() {
 
@@ -74,13 +74,13 @@ $(document).ready(function() {
 		return t;
 		}
 	(document, "script", "twitter-wjs"));
-    
+
     // Create a New Tweet Element
 		var tweet;
     var kp = " -Kenny Powers"
 		var msg = document.getElementById('quote').innerHTML;
 
-   
+
 		if ( msg.length >= 99 ) {
 			var truncated = msg.slice( 0, 95 );
 			tweet = "\"" + truncated + "..." + "\"" + "\n" + kp + "\n";
@@ -95,7 +95,7 @@ $(document).ready(function() {
 		link.setAttribute('id', 'twitterbutton');
     link.setAttribute('class', 'twitter-share-button');
 		link.setAttribute("data-text", tweet);
-    
+
 		// Put it inside the twtbox div
 		var tweetdiv = document.getElementById('twtbox');
 		// Removes previous tweet button if one already exists
