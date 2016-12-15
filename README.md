@@ -2,4 +2,4 @@
 
 ### Random Kenny Powers (from the tv show "Eastbound and Down") quote generator for FreeCodeCamp. Quotes are mostly NSFW.
 
-![Kenny Powers Random Quote Generator](https://raw.githubusercontent.com/sschapma/codepen/master/kp.png =300x200)
+![Kenny Powers Random Quote Generator](http://sschapman.com/img/sm-img/kp.png)
